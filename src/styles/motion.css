@@ -1,9 +1,0 @@
-/* Shared keyframes cheaper in CSS than Framer. Respects prefers-reduced-motion. */
-@keyframes rt-pulse { 0%,100% { opacity: .42 } 50% { opacity: .95 } }
-@keyframes rt-dot { 0%,100% { opacity: .25; transform: translateY(0) } 50% { opacity: 1; transform: translateY(-3px) } }
-@keyframes rt-ripple { from { opacity: .5; transform: scale(.9) } to { opacity: 0; transform: scale(1.15) } }
-@keyframes rt-spin-slow { to { transform: rotate(360deg) } }
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-}

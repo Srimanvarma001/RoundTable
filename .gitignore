@@ -1,0 +1,26 @@
+# deps
+node_modules/
+.next/
+out/
+dist/
+
+# db + uploads (keep .gitkeep)
+data/*.db*
+data/*.db-journal
+data/cache/
+data/uploads/*
+!data/uploads/.gitkeep
+
+# secrets — NEVER commit real keys
+.env
+.env.local
+.env.*.local
+
+# logs / os
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+
+# coverage
+coverage/
